@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web_Template</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div>Header Logo</div>
-            <div>Header Link One</div>
-            <div>Header Link Two</div>
-            <div>Header Link Three</div>
-        </div>
-        <div class="left-side">
-            <div>This website is awesome</div>
-            <div>This website has soem subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
-            <button>Sign Up</button>
-        </div>
-        <div class="right-side">
-            <img src="/home/vboxuser/repos/web_template/pexels-paige-thompson-14448227.jpg" alt="Seagull standing on top a rock">
+    <!-- #1. created main body, and head and sub containers for first section -->
+    <div class="main">
+        <div class="container">
+            <!-- 2. created header container with logo and links -->
+            <div class="header">
+                <p>Header Logo</p>
+                <a href="link1">header link one</a>
+                <a href="link2">header link two</a>
+                <a href="link3">header link three</a>
+            </div>
+            <!-- #3. created sub container for left side text and right side image -->
+            <div class="sides">
+                <div class="lside">
+                    <p>This website is awesome</p>
+                    <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="rside">
+                    <img src="/home/vboxuser/repos/web_template/pexels-paige-thompson-14448227.jpg" alt="Seagull standing on top a rock">
+                </div>
+            </div>
         </div>
     </div>
 </body>
