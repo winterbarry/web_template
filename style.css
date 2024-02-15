@@ -1,4 +1,4 @@
-/* #1. added flex property to main and sub container */
+/* #1. added flex  and vertical properties to sub container */
 .main .container{
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@ img {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+    /* #9. added margin to separate header and other boxes */
     margin-bottom: 48px;
 }
 
@@ -30,7 +31,7 @@ img {
     justify-content: space-between;
 }
 
-/* #6. reduced the with of left box and added wrap attribute */
+/* #6. reduced the width of left box and added wrap attribute */
 .sides .lside {
     width:  25%;
     display: flex;
@@ -39,11 +40,71 @@ img {
 
 /* #7. added margin/space between the logo and links */
 .header p {
-    margin-right:  auto; /* Space between the logo and the links */
+    margin-right:  auto; 
+    font-size: 24px;
 }
 
 /* #8. added margin/space between the links */
 .header a {
-    margin-left:  10px; /* Minimal space between links */
-    margin-right:  10px; /* Minimal space between links */
+    margin-left:  10px; 
+    margin-right:  10px; 
+    /* #10. remove link underlines */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* #11. most color and font size changes start here */
+.container {
+    background-color: #1F2937;
+    color: white;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+}
+.lside p {
+    font-size: 18px;
+}
+
+/* #12. second container stylings begin here */
+.images img {
+    width: 150px;
+    height: 150px;
+}
+
+/* #13. aligned images horizontally at the center */
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+/* #14. set gap between items vertically */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* #15. moved text to center and spaced it from first container */
+.text {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    font-size: 36px;
+}
+
+/* 16. added space between the images */
+.images .imgbox {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* #17. ensures text stays underneath the images */
+.imgbox img {
+    display: block;
 }
