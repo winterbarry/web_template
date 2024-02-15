@@ -1,59 +1,57 @@
-/* #1. added flex  and vertical properties to sub container */
+/* #1. added flex and vertical properties to sub container */
 .main .container{
     display: flex;
     flex-direction: column;
 }
 
-/* #2. changed main container height to fill viewport */
 .main {
     height: 100vh;
 }
 
-/* #3. changed size of image file */
 img {
     width: 500px;
     height: 250px;
 }
 
-/* #4. added flex, aligned items horizontally and spaced them */
+/* #2. added flex, aligned items horizontally and spaced them */
 .header {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    /* #9. added margin to separate header and other boxes */
+    /* #3. added margin to separate header and other boxes */
     margin-bottom: 48px;
 }
 
-/* #5. did the same for content boxes in .sides */
+/* #4. did the same for content boxes in .sides */
 .sides {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* #6. reduced the width of left box and added wrap attribute */
+/* #5. reduced the width of left box and added wrap attribute */
 .sides .lside {
     width:  25%;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* #7. added margin/space between the logo and links */
+/* #6. added margin/space between the logo and links */
 .header p {
     margin-right:  auto; 
     font-size: 24px;
 }
 
-/* #8. added margin/space between the links */
+/* #7. added margin/space between the links */
 .header a {
     margin-left:  10px; 
     margin-right:  10px; 
-    /* #10. remove link underlines */
+    /* #8. remove link underlines */
     text-decoration: none;
     font-size: 18px;
 }
 
-/* #11. most color and font size changes start here */
+/* #9. most color and font size changes start here */
 .container {
     background-color: #1F2937;
     color: white;
@@ -71,26 +69,26 @@ h1 {
     font-size: 18px;
 }
 
-/* #12. second container stylings begin here */
+/* #10. second container stylings begin here */
 .images img {
     width: 150px;
     height: 150px;
 }
 
-/* #13. aligned images horizontally at the center */
+/* #11. aligned images horizontally at the center */
 .images {
     display: flex;
     justify-content: center;
 }
 
-/* #14. set gap between items vertically */
+/* #12. set gap between items vertically */
 .container1 {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-/* #15. moved text to center and spaced it from first container */
+/* #13. moved text to center and spaced it from first container */
 .text {
     display: flex;
     justify-content: center;
@@ -98,18 +96,18 @@ h1 {
     font-size: 36px;
 }
 
-/* 16. added space between the images */
+/* 14. added space between the images */
 .images .imgbox {
     margin-left: 12px;
     margin-right: 12px;
 }
 
-/* #17. ensures text stays underneath the images */
+/* #15. ensures text stays underneath the images */
 .imgbox img {
     display: block;
 }
 
-/* #18. stylings for third container begins here */
+/* #16. stylings for third container begins here */
 .container2 {
     display: flex;
     justify-content: center;
@@ -117,14 +115,14 @@ h1 {
     background-color: #E5E7EB;
 }
 
-/* #19. ensures each paragraph starts from a new line */
+/* #17. ensures each paragraph starts from a new line */
 .quote {
     display: block;
     font-size: 36px;
     font-style: italic;
 }
 
-/* #20. display block ensures text align works properly */
+/* #18. display block ensures text align works properly */
 .thor {
     display: block;
     text-align: right;
