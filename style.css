@@ -128,3 +128,26 @@ h1 {
     text-align: right;
     font-size: 28px;
 }
+
+/* #19. third container stylings begin here */
+
+/* #20. moved innerbox to center */
+.container3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+/* #21. added flex, aligned items horizontally and spaced them */
+.innerbox {
+    background-color: blue;
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    gap: 128px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 128px;
+    padding-right: 128px;
+}
